@@ -12,18 +12,37 @@
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
-  <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+  <body class="bg-success">
+    <!-- Genero el contenedor principal y le asigno la propiedad de flexible -->
+    <div class="d-flex justify-content-center align-items-center">
+      <!-- Genero la carta y le asigno las propiedades para el margen y su tamaño a lo ancho -->
+      <div class="card mt-3" style="width: 18rem;">
+        <!-- Genero el contenedor que va a almacenar un elemento que obtiene del array y le genero propiedades de flexible y tamaño -->
+        <div
+          id="elemento-top"
+          class="d-flex justify-content-start"
+          style="font-size: 5rem;"
+          ;
+        ></div>
+        <!-- Genero el contenedor que va a almacenar un elemento que obtiene del array y le genero propiedades de flexible y tamaño -->
+        <div
+          id="elemento-middle"
+          class="d-flex justify-content-center"
+          style="height: 288px; font-size: 8rem;"
+        ></div>
+        <!-- Genero el contenedor que va a almacenar un elemento que obtiene del array y le genero propiedades de flexible y tamaño -->
+        <div
+          id="elemento-buttom"
+          class="d-flex justify-content-end"
+          style="font-size: 5rem;"
+        ></div>
       </div>
+      <!-- Genero el boton que me va a permitir cambiar las cartas de forma random -->
+      <button id="button" class="btn btn-primary" type="submit">
+        Generar carta random
+      </button>
     </div>
+    <!-- Creo la etiqueta que me permite vincular el archivo app.js con mi html -->
+    <script type="text/javascript" src="./app.js"></script>
   </body>
 </html>
